@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">KENNETH NNADI'S PORTFOLIO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">KENNETH NNADI'S PORTFOLIO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()" >Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Kenneth Nnadi</h1>
+        <p class="section__text__p2">Cyber Security Professional</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/kenneth-nnadi/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/swanky-lala'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Cyber Security</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science<br />M.Sc. Computer Science/Cyber Security</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              With over four years of experience in the field of cybersecurity, I have developed my skills in protecting digital assets and ensuring robust security measures for various organizations. My journey began with a B.Sc. in Computer Science, followed by an M.Sc. in the same field, which provided me with a solid foundation in both theoretical and practical aspects of computing and security. Throughout my career, I have specialized in areas such as vulnerability management, risk analysis, incident response, threat modeling, and network security. I am adept at using a variety of tools and technologies, including but not limited to SIEM, IDS/IPS, cloud security, and endpoint security solutions. My approach combines a deep understanding of cybersecurity principles with hands-on expertise in implementing and managing security protocols. I am passionate about staying updated with the latest industry trends and continuously enhancing my skill set to tackle emerging cybersecurity challenges. Whether it's securing networks, managing identities, or protecting applications, I am committed to delivering top-notch security solutions and ensuring the safety and integrity of digital environments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cyber Security</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Automation and server/File mgt(Ansible, ZFS)</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Monitoring and Logging</h3>
+                  <p> (e.g. Prometheus, Splunk)</p>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Security Information and Event Management (SIEM), SOAR</h3>
+                  <p>(e.g., Splunk, Nessus, IBM QRadar)</p>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Application Security (OWASP Top Ten, Burp Suite, OWASP ZAP)</h3>
+                  <p>Intermidate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cloud Security (AWS, Azure, Google Cloud)</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>Network Security(CISCO, Palo Alto)</h3>
+                  <p>tools: (e.g., Wireshark, tcpdump) </p>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+
+              </article>
+            </div>
+          </div>
+          
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cyber Security</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Identity and Access Management(IAM)</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>System Administration</h3>
+                  <p>(Active directory, Linux, windows server)</p>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>EBGP, IPsec, VPN </h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firewall Management</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> Endpoint Security & IT Support</h3>
+                  <p> (e.g. CrowdStrike, Symantec)</p>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Intrusion Detection and Prevention Systems (IDS/IPS)</h3>
+                  <p>(e.g., Suricata, Snort etc)</p>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Risk Management</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Risk Analysis</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Incident Response</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Threat Modeling</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                 <div>
+                    <h3>Asset Management</h3>
+                  <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Contingency planning</h3>
+                  <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Container Security (Docker, Kubernetes)</h3>
+                    <p>Basics</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            
+            <div class="details-container">
+              <h2 class="experience-sub-title">Penetration Testing</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Operating Systems (Linux, Windows)</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Scripting and Programming</h3>
+                    <p> (Python, Bash, PowerShell, R, HTML & CSS, C/C++)</p>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                    
+                  />
+                  <div>
+                    <h3>Vulnerability Assessment (Nessus, OpenVAS, Qualys)</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Social Engineering</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Cryptography (SSL/TLS, PKI)</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Exploitation Techniques (Metasploit)</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <h2 class="experience-sub-title">Penetration Testing</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Forensics and Malware Analysis</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Post-Exploitation Techniques</h3>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Enumeration</h3>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Ethical Hacking</h3>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Security Testing and Deployament</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Physical Security</h3>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              
+              <div class="details-container">
+                <h2 class="experience-sub-title">Security Compliance and Standards </h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Cyber Security Frameworks</h3>
+                      <p>NIST SP 800-37 & 53, ISO 27001, SOX, PCI-DSS, GDPR</p>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Zero Trust Architecture</h3>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Security Awareness & Training</h3>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Security Policy Dev and Secure design</h3>
+                      <p>Advanced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Secure Software Development</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Mobile Device Security</h3>
+                      <p>Adnaced</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Duck Chat</h2>
+            <p class="project-text">This project is a decentralized chat system, DuckChat, allowing real-time messaging between clients on different servers. It improves reliability and scalability, enabling users to join chat rooms and exchange messages seamlessly.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/swanky-lala/multiple-server-to-multiple-client-duckchat'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/swanky-lala/multiple-server-to-multiple-client-duckchat'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Vulnerability-Management-Tools-4.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Vulnerability Management</h2>
+            <p class="project-text"> Developed a solution using OpenVAS and GVM API to automate and streamline network vulnerability assessments, sending CVSS scores of found vulnerabilities to the administrator for efficient management. </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/swanky-lala/OpenVas-API-Automation'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/system-administrator.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">System Administration and Security</h2>
+            <p class="project-text">Designed and implemented a system administration and security project, focusing on configuring and securing servers, managing user access, and ensuring compliance with security protocols to protect organizational data and infrastructure.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1ku_xMKEYkTTAuCim7wj1HIyFPE0MGxOR/view?usp=sharing'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>  
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    <!-- </section> -->
+    <!-- <section id="projects"> -->
+      <!-- <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1> -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pentesting.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Penetration Testing</h2>
+            <p class="project-text">Conducted detailed penetration testing on Artemis Gas Inc, employing advanced techniques to simulate real-world attacks, identify vulnerabilities, and enhance security defenses, fortifying their infrastructure against cyber threats.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://docs.google.com/document/d/1TPuQaTUKW7eooZQ2BIjpfI9uEg9gbcuQbFkCHUIMfKw/edit?usp=sharing'"
+              >
+                Github
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/TLS.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Short-lived certificate Auth in Zero Trust Architecture</h2>
+            <p class="project-text"> Designed and implemented short-lived certificate authentication in a Zero Trust model, enhancing security with dynamic access control. The solution employs advanced principles to fortify network security, mitigating risks effectively. </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Group-8-CS-533/Short-Lived-Certificate-Zero-Trust'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ROC.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Network Intrusion Detection System Using Machine learning</h2>
+            <p class="project-text">Developed a Network Intrusion Detection System (NIDS) using logistic regression and k-nearest neighbor algorithms with the UNSW_NB15 dataset. Analyzed network traffic to enhance cybersecurity measures effectively.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://rpubs.com/ken_iyke/1017857'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>  
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+      
+    <!-- </section> -->
+
+
+
+
+
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/rainbow_table.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Parallelization of Rainbow Table Generation</h2>
+            <p class="project-text">Developed a Rainbow Table Generator for cybersecurity, decoding encrypted passwords by reversing cryptographic hash functions like SHA1, SHA256, and SHA512. Utilized MPI, OpenMP, and CUDA for parallel processing, ensuring rapid hash pair computations.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/parallelprocessing631/RainbowTable'"
+              >
+                Github
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/windows.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Manager for Windows 10 and Server 2016 Upgrade at Globex </h2>
+            <p class="project-text"> Managed the upgrade project for Globex, transitioning desktops from Windows 7 to Windows 10 and servers to Windows Server 2016. Conducted a feasibility study, gathered user and hardware data, and presented findings. Developed a detailed project plan for PMO approval, addressing scope, cost, and schedule. </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://docs.google.com/document/d/1uDsJ-SHZgiDvzOMQCa1p-sCja8O5zdyE-kF0WL9qV68/edit?usp=sharing'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Risk_Assesment.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Security Risk Assesment </h2>
+            <p class="project-text">Conducted a comprehensive risk assessment, enumerating and rating risks along with identifying root causes. Provided detailed remediation recommendations to address each risk, enhancing overall security posture and mitigating potential threats.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://docs.google.com/spreadsheets/d/1CT6qRylFagGrPFUljMkod9GFU9v9llB_VF4VYxHaMuo/edit?usp=sharing'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>  
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Threat Assessment.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Threat Assesment Sample</h2>
+            <p class="project-text">Conducted a thorough threat assessment, identifying and rating potential threats along with their root causes. Provided detailed mitigation strategies to address each threat, enhancing overall security measures and reducing vulnerabilities.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://docs.google.com/spreadsheets/d/1_sIzK6YtbnrxB3fDvzfv9HNUh4NH0fp9A_lQBw-3_CQ/edit?usp=sharing'"
+              >
+                Github
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Short-lived certificate Auth in Zero Trust Architecture</h2>
+            <p class="project-text"> Designed and implemented short-lived certificate authentication in a Zero Trust model, enhancing security with dynamic access control. The solution employs advanced principles to fortify network security, mitigating risks effectively. </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Group-8-CS-533/Short-Lived-Certificate-Zero-Trust'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Network Intrusion Detection System Using Machine learning</h2>
+            <p class="project-text">Developed a Network Intrusion Detection System (NIDS) using logistic regression and k-nearest neighbor algorithms with the UNSW_NB15 dataset. Analyzed network traffic to enhance cybersecurity measures effectively.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://rpubs.com/ken_iyke/1017857'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>  
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+       -->
+
+
+
+
+
+
+
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Certifications</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/image.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CISSP</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1lLfvjdscbMb0JWbDGNNe8ZqgE9kcWvDs/view?usp=sharing'"
+              >
+                Verify
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/CompTIA_Security_2Bce.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CompTIA Security +</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.credly.com/badges/be1730fe-211f-41ae-ad8a-0b394e7117af/linked_in_profile'"
+              >
+                Verify
+              </button>
+          
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/springboard_logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Springboard Cyber Security Bootcamp</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.credential.net/4cd9cba1-8131-48a4-9101-af1fd44f899c'"
+              >
+                Verify
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/hq720.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Google professional Data Analytics</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.credly.com/badges/d043e6ce-9097-4bbf-a4b7-db27f192271b?source=linked_in_profile'"
+              >
+                Verify
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/powerbi logo 1.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Micrsoft Power BI for Data analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.udemy.com/certificate/UC-953f9e0c-ba1f-456a-b6c8-6e661d017272/'"
+              >
+                Verify
+              </button>
+          
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Microsoft_Excel_2013-2019_logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Microsoft Excel -Advance</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.udemy.com/certificate/UC-6b62ada9-eeca-436a-b129-d960cf385d36/'"
+              >
+                Verify
+              </button>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kennethinnadi@gmail.com">kennethinnadi@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/kenneth-nnadi/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications"> Certifications </a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Kenneth Nnadi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
