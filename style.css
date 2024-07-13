@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -134,23 +135,10 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
 /* SECTIONS */
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -158,6 +146,8 @@ section {
 
 .section-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* PROFILE SECTION */
@@ -174,6 +164,17 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  text-align:center;
+}
+
+.picsTwo{
+
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+ 
+
+
 }
 
 .section__text {
@@ -197,6 +198,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 1rem; /* Add margin to separate the title from the content */
 }
 
 #socials-container {
@@ -257,10 +259,6 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
-  gap: 1rem;
-}
-
 /* ABOUT SECTION */
 
 #about {
@@ -268,19 +266,15 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
 .about-details-container {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about-pic {
@@ -301,17 +295,11 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  margin: 1rem; /* Add margin to separate containers */
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.text-container {
+  margin-top: 2rem; /* Add margin to separate the text container from other elements */
 }
 
 /* EXPERIENCE SECTION */
@@ -335,9 +323,7 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -345,7 +331,6 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
   gap: 0.5rem;
 }
 
@@ -430,4 +415,3 @@ footer {
 footer p {
   text-align: center;
 }
-
